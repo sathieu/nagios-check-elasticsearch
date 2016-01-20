@@ -86,7 +86,7 @@ class ESNodesStatsJVMCheck(ESCheck):
     """Check ElasticSearch JVM stats.
     """
 
-    path = '/_nodes/stats'
+    path = '/_nodes/_local/stats/jvm'
 
     def probe(self):
         json = self.get_json()
