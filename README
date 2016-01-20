@@ -1,0 +1,25 @@
+Usage:
+
+$ python check_elasticsearch.py --help
+usage: check_elasticsearch.py [-h] [-H ADDRESS] [-p INTEGER] [-w RANGE]
+                              [-c RANGE] [-v] [-t TIMEOUT]
+                              [CHECK]
+
+positional arguments:
+  CHECK                 Check performed (One of cluster-health, jvm-heap)
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -H ADDRESS, --hostname ADDRESS
+                        Host name or IP Address (default: localhost)
+  -p INTEGER, --port INTEGER
+                        Port number (default: 9200)
+  -w RANGE, --warning RANGE
+                        warning if RESULT is outside RANGE (RESULT being
+                        number of data nodes, or percent heap used)
+  -c RANGE, --critical RANGE
+                        critical if RESULT is outside RANGE
+  -v, --verbose         increase output verbosity (use up to 3 times)
+  -t TIMEOUT, --timeout TIMEOUT
+                        abort execution after TIMEOUT seconds
+
